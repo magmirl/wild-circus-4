@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { MapComponent } from './map/map.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { MapComponent } from './map/map.component';
     HomeComponent,
     ContactComponent,
     MapComponent
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
