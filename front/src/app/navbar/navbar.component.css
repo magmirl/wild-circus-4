@@ -1,114 +1,259 @@
-header {
-    margin: 0px;
-    height: 80px;
-    color: white;
-    background: var(--tiron1);
-    border-bottom:solid 5px var(--tiron4);
-    top: 0;
-    position: fixed;
-    z-index: 20;
-    padding: 0;
-}
-.navbar{
-    height: 80px;
-}
+/* Afin de valider ton code CSS, clic sur la petite flèche en haut à droite de cette fenêtre. Pour rappel, tu peux jeter un oeil par ici pour en savoir un peu plus: https://blog.codepen.io/2017/10/11/analyze-css-now-using-stylelint/ */
 
-.title {
-    color: white;
-    font-size: calc(1rem + 1vw);
-    font-family: sans-serif;
-}
+ /*Ecris ici ton code CSS*/ 
 
-.center {
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.button {
-    height: 100%;
-    font-size: calc(1rem + 0.3vw);
-    
-}
-.buttonCont {
-    height: 100%;
-    margin-top: -60px;
-}
-.toggleButton{
-    width: 100px;
-    height: 100%;
-}
-.buttonside {
-    height: 70px;
-    margin: 0px;
-    padding: 0px;
-    margin: 0px;
-}
-
-.wrapMobileNav {
-    padding: 0px;
-    margin: 0px;
-}
-.mobileNav {
-    position: absolute;
-    height: 100vh;
-    padding: 0px;
-    min-width: 100px;
-    color: white;
-    z-index: 20;
-}
-
-button {
-    position: relative;
-}
-
-button::before, button::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    width: 100%;
-    height: 2px;
-    background-color: #947f3a;
-    transform-origin: center;
-    transform: translateX(-50%) scaleX(0);
-    transition: transform 0.4s ease;
-}
-
-button::before {
-    top: 0;
-}
-
-button::after {
-    bottom: 0;
-}
-
-button:hover::before, button:hover::after {
-    transform: translateX(-50%) scaleX(1);
-}
-
-.collapse {
-    visibility: hidden;
-}
-
-.collapse.show {
-    visibility: visible;
-    display: block;
-}
-
-.collapsing {
-    position: relative;
-    height: 0;
-    overflow: hidden;
-    -webkit-transition-property: height, visibility;
-    transition-property: height, visibility;
-    -webkit-transition-duration: 0.35s;
-    transition-duration: 0.35s;
-    -webkit-transition-timing-function: ease;
-    transition-timing-function: ease;
-}
-
-.collapsing.width {
-    -webkit-transition-property: width, visibility;
-    transition-property: width, visibility;
-    width: 0;
-    height: auto;
-}
+ #titre_principal
+ {
+   display:flex;
+   flex-direction: column;
+ }
+ 
+ h1
+ {
+   font-size: 130px;
+   color: #DB0B32;  
+ }
+ 
+ h2
+ {
+  font-size: 40px; 
+  color: #B1221C;
+ }
+ 
+ h1, h2, h3, #performances-list
+ {
+   font-family: 'Amatic SC', cursive;
+ }
+ 
+ #performances-list
+ {
+   font-size: 30px; 
+   color: #002F2F;
+ }
+ 
+ ul {
+   list-style-type: none;
+ }
+ 
+ #conteneur
+ {
+   display: flex;
+   justify-content: space-around;
+ }
+ 
+ /*Navigation*/
+ 
+ nav ul
+ {
+   display: flex;
+   justify-content : flex-end;
+ }
+ 
+ nav li
+ {
+   margin-right: 35px;
+ }
+ nav a
+ {
+   font-size: 1.3em;
+   color: #181818;
+   padding-bottom: 3px;
+   text-decoration: none;
+ }
+ 
+ nav a:hover
+ {
+   color: #760001;
+   border-bottom: 3px solid #760001;
+ }
+ 
+ /*corp*/
+ 
+ section h3
+ {
+   display:flex;
+   margin-bottom :20px;
+ }
+ 
+ aside
+ {
+   position: relative;
+   box-shadow: 0px 2px 5px #4EA9A0;
+   border-radius: 5px;
+   padding: 20px;
+   color: black;
+   font-size: 0.9em;
+ }
+ 
+ table
+ {
+   border-collapse: collapse;
+ }
+ td, th
+ {
+   border: 2px solid black;
+ }
+ 
+ body
+ {
+  background: #FFEFB6;
+  font-family:'Trebuchet MS', Arial, Sans-sherif;
+  color: #181818;
+ }
+ 
+ input:focus
+ {
+   background-color : #DCDCDC;
+ }
+ 
+ a:visited
+ {
+   color: #888888;
+ }
+ 
+ /*footer*/
+ footer
+  {
+   font-size: 1em;
+   color: #181818;
+   padding-bottom: 1px;
+   text-decoration: none;
+ } 
+ 
+ 
+ .slider{
+   position: relative;
+   width: 100%;
+   height: 400px;
+   margin-top: 90px;
+   overflow: hidden;
+ }
+ 
+ .slides{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 300%;
+   height: 100%;
+   display: flex;
+   animation: glisse 18s infinite;
+ }
+ 
+ .slide{
+   position: relative;
+   width: 33.33%;
+   height: 100%;
+ }
+ 
+ .slide img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+ }
+ 
+ @keyframes glisse{
+   0% {
+     transform: translateX(0);
+   }
+   20% {
+     transform: translateX(0); 
+   }
+ 
+   33% {
+     transform: translateX(-33.33%);
+   }
+ 
+   53% {
+     transform: translateX(-33.33%);
+   }
+ 
+   66% {
+     transform: translateX(-66.66%);
+   }
+ 
+   86% {
+     transform: translateX(-66.66%);
+   }
+   100% {
+     transform: translateX(0);
+   }
+ }
+ 
+ #about-us-article img {
+   max-width: 100%;
+ }
+ 
+ 
+ #contact-section form {
+   box-shadow: 0px 2px 5px black;
+   width: 240px;
+   padding: 30px;
+   margin-top: -440px;
+   margin-left: 45px;
+   position: relative;
+   z-index: 2;
+   background-color: rgba(255, 239, 182, 0.8);
+ }
+ 
+ #contact-section form input { 
+   height: 25px;
+ }
+ 
+ #contact-section form textarea, #contact-section form input {
+   width: 240px;
+   border-radius: 4px;
+   border: none;
+ }
+ 
+ #contact-section form textarea {
+   height: 100px;
+ }
+ 
+ #map { 
+   height: 450px;
+   position: relative;
+   z-index: 1;
+ }
+ 
+ 
+ @media all and (max-width: 576px) {
+   
+   #conteneur {
+     flex-direction: column;
+     align-items: center;
+   }
+ 
+   #conteneur li {
+     margin-top: 20px;
+   }
+   
+   h1 {
+    text-align: center;
+   }
+ 
+   nav a:hover {
+     border-bottom: none;
+     color: #760001;
+   }
+ 
+   .slider{
+     height: 300px;
+   }
+ 
+ }
+ 
+ @media all and (min-width: 769px) { 
+   #performances-list {
+     display: flex;
+     justify-content: space-around;
+   }
+ 
+   #performances-list li {
+     width: 25%;
+   }
+ 
+   .slider{
+     height: 450px;
+   }
+ }
