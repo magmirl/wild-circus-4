@@ -14,7 +14,7 @@
   }
   
   #contact-section form textarea, #contact-section form input {
-    width: 240px;
+    /* width: 240px; */
     border-radius: 4px;
     border: none;
   }

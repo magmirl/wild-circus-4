@@ -1,27 +1,15 @@
-<header *ngIf="enable || !atHome" class="container-fluid circusAlpha" [@animation1]="enable ? 'open' : close">
-  <nav class="navbar row ">
-      <div class="col-3 d-md-none button">
-          <button mat-icon-button (click)="toggleSideNav()" class="toggleButton">
-              <mat-icon>menu</mat-icon>
-          </button>
-      </div>
-      <div class="col-5 col-lg-4 d-none d-md-block buttonCont">
-          <button mat-button class="col-6 button" [routerLink]="['/event']">Home</button>
-          <button mat-button class="col-6 button" [routerLink]="['/article']">About us</button>
-      </div>
+<header class="container-fluid circusAlpha" [@animation1]="enable ? 'open' : close">
+    <nav class="navbar row ">
+        
 
-      <div class="col-5 col-lg-4 d-none d-md-block buttonCont">
-          <button mat-button class="col-6 button"  [routerLink]="['/product']">Map</button>
-          <button mat-button class="col-6 button">Contact</button>
-      </div>
-  </nav>
-  <!-- Mobile/Tablet only side navigation-->
-  <div class="d-md-none mobilenavcont" *ngIf="isNavOpen" [@animation1]="isNavOpen ? 'open': 'close'">
-      <nav class="mobileNav col-4 col-sm-3 circusAlpha">
-          <button mat-button class="col-12 buttonside" [routerLink]="['/home']">Home</button>
-          <button mat-button class="col-12 buttonside" [routerLink]="['/aboutus']">About us</button>
-          <button mat-button class="col-12 buttonside" [routerLink]="['/map']">Map</button>
-          <button mat-button class="col-12 buttonside" [routerLink]="['/contact']">Contact</button>
-      </nav>
-  </div>
+            <nav>
+                <ul id="conteneur">
+                    <li><a href="#performances">Performances</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#prices">Prices</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        
+    </nav>
 </header>
