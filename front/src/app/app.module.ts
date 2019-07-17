@@ -52,6 +52,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AdminComponent } from './admin/admin.component';
 import { AdminPricesComponent } from './admin/admin-prices/admin-prices.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { AdminPricesComponent } from './admin/admin-prices/admin-prices.componen
     MapComponent,
     NavbarComponent,
     AdminComponent,
-    AdminPricesComponent
+    AdminPricesComponent,
+    FooterComponent
   ],
   imports: [
     ReactiveFormsModule,

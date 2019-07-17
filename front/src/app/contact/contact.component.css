@@ -1,22 +1,30 @@
+h2
+{
+ font-size: 40px; 
+ color: #B1221C;
+ font-family: 'Amatic SC', cursive;
+}
+
 #contact-section form {
     box-shadow: 0px 2px 5px black;
-    width: 240px;
+    width: 340px;
     padding: 30px;
     margin-top: -440px;
-    margin-left: 45px;
+    margin-left: 55px;
     position: relative;
     z-index: 2;
-    background-color: rgba(255, 239, 182, 0.8);
+    background-color: burlywood;
   }
   
   #contact-section form input { 
-    height: 25px;
+    height: 30px;
+    width: 250px;
   }
   
   #contact-section form textarea, #contact-section form input {
-    /* width: 240px; */
     border-radius: 4px;
     border: none;
+    width: 250px;
   }
   
   #contact-section form textarea {
